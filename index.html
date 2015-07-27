@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>SUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/> 
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="format-detection" content="telephone=no" />
+        <meta http-equiv="Expires" content="0">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<link rel="stylesheet" href="css/global.css">
+        <link rel="stylesheet" href="css/sui.css">
+	</head>
+	<body>
+		<header>
+			<div class="container fixed">
+				<div class="wrap">
+					
+		            <h1>SUI</h1>
+
+				</div>	
+			</div>			
+		</header>
+		
+		<div class="container">
+			<p class="pline">SUI是移动前端CSS Framework，她包含核心、布局、元素、片段、动画、组件等模块，增加了混合、自定义标签等，能够快速订制样式。</p>
+            
+            <p class="pline"> Fragment 部分:</p>
+            <div class="sui-list">
+                <ul>  
+                    <li><a href="example/layout.html">布局</a></li>
+                    <li><a href="example/list.html">列表</a></li>
+                    <li><a href="example/grids.html">网格</a></li>
+                </ul>
+            </div>
+            
+            <p class="pline"> Element 部分:</p>
+            <div class="sui-list">
+                <ul>
+                    <li><a href="example/button.html">按钮</a></li>
+                    <li><a href="example/input.html">输入框</a></li>
+                    <li><a href="example/checkbox-radio.html">多选 & 单选</a></li>
+                </ul>
+            </div>
+            
+            <p class="pline"> Element 部分:</p>
+            <div class="sui-list">
+                <ul>
+                    <li><a href="example/tab.html">tab切换</a></li>
+                    <li><a href="example/addsubtract.html">加减输入框</a></li>
+                    <li><a href="example/selectlist.html">下拉选项</a></li>
+                    <li><a href="example/slide-button.html">滑块</a></li>
+                </ul>
+            </div>
+            
+            <p class="pline"> Animate 部分:</p>
+            <div class="sui-list">
+                <ul>
+                    <li><a href="#.html">动画</a></li>
+                    <li><a href="#.html">相册</a></li>
+                    <li><a href="#.html">轮播</a></li>
+                </ul>
+            </div>
+            
+                     
+
+
+			
+			<!-- <div id="some_element" style="border:1px solid #ccc; background:#F00; height:40px; width:40px;"></div>
+			<style>.delete { display: none; }</style>
+			<ul id="items">
+			  <li style=" height:50px; boder:1px solid #ccc;">List item 1 <span class=delete>DELETE</span></li>
+			  <li style=" height:50px; boder:1px solid #ccc;">List item 2 <span class=delete>DELETE</span></li>
+			</ul> -->
+
+		</div>
+
+
+	
+	<!--<script src="js/jquery.min.js"></script>-->
+    <!-- <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>-->
+	<script src="js/zepto.min.js"></script>
+    <script src="js/baguetteBox.js"></script>
+	<script src="js/touch.js"></script>
+	<script src="js/fx.js"></script>
+    <script src="js/zepto.alerts.js"></script>
+    <script src="js/echo.min.js"></script>
+    <script>
+		//window.onload = function() {baguetteBox.run('.baguetteBoxOne');};
+		Echo.init({ offset: 0, throttle: 0 });
+    </script>
+    <script>	
+		/*选中*/
+		$('.selectC_box  li').on("tap",function(){
+			var v =$(this).children("a");
+			v.addClass("check").parent().siblings().children("a").removeClass("check");
+			$num=$(this).index();
+	　　});
+
+    </script>	
+
+	</body>
+</html>

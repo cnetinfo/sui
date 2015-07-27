@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>sui</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/> 
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="format-detection" content="telephone=no" />
+        <meta http-equiv="Expires" content="0">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<link rel="stylesheet" href="../css/global.css">
+		<link rel="stylesheet" href="../css/sui.css">
+	</head>
+	<body>
+		<header>
+			<div class="container fixed">
+				<div class="wrap">
+					<div class="back"> 
+						<a href="javascript:history.go(-1);" title="返回"><i class="icons icons-pointleft"></i></a>
+					</div>
+		            <h1>下拉选项</h1>
+                    <div class="goto downListNav">
+						<a href="#" title="菜单"><i class="icons icons-menu"></i></a>
+                        <div class="downListCon">
+                            <ul>
+                                <li><a href="/mall/index.html">我的首页</a></li>
+                                <li><a href="#">个人中心</a></li>
+                                <li><a href="#">我的订单</a></li>
+                                <li><a href="#">我的地盘</a></li>
+                                <li><a href="#">我的收藏</a></li>
+                            </ul>
+                        </div>
+					</div>
+				</div>	
+			</div>			
+		</header>
+		
+		<div class="nav-fixed">
+			<div class="container">
+				<div class="selectC_box clearfix">
+					<ul><!--a class="check"-->
+						<li class="downListNav">
+                        	<a href="#order">我的订单<i class="icons-arrowdown" style="margin:0 0 4px 4px;"></i></a>
+                            <ul class="downListCon">
+                            	<li><a href="#">个人中心</a></li>
+                                <li><a href="#">我的订单</a></li>
+                                <li><a href="#">我的地盘</a></li>
+                                <li><a href="#">我的收藏</a></li>
+                            </ul>
+                        </li>
+						<li class="downListNav">
+                            <a href="#ground" >我的地盘<i class="icons-arrowdown" style="margin:0 0 4px 4px;"></i></a>
+                            <ul class="downListCon">
+                                <li><a href="#">我的订单</a></li>
+                                <li><a href="#">我的地盘</a></li>
+                                <li><a href="#">我的收藏</a></li>
+                            </ul>
+                        </li>
+                        <li class="downListNav">
+                            <a href="#ground" >我的收藏<i class="icons-arrowdown" style="margin:0 0 4px 4px;"></i></a>
+                            <ul class="downListCon">
+                            	<li><a href="#">个人中心</a></li>
+                                <li><a href="#">我的订单</a></li>
+                                <li><a href="#">我的地盘</a></li>
+                            </ul>
+                        </li>
+					</ul>
+				</div>
+                
+			</div>	
+		</div>
+
+		<div class="container">
+				
+                
+                <p class="pline"> select选项</p>
+        		<div class="sui-select">
+                    <label>请选择您所在的城市</label>
+                    <select id="c_city">
+                        <option value="110000000000">北京市</option>
+                        <option value="120000000000">天津市</option>
+                        <option value="130000000000">河北省</option>
+                        <option value="140000000000">山西省</option>
+                        <option value="150000000000">内蒙古自治区</option>
+                        <option value="210000000000">辽宁省</option>
+                        <option value="220000000000">吉林省</option>
+                        <option value="230000000000">黑龙江省</option>
+                        <option value="310000000000">上海市</option>
+                        <option value="320000000000">江苏省</option>
+                        <option value="330000000000">浙江省</option>
+                        <option value="340000000000">安徽省</option>
+                        <option value="350000000000">福建省</option>
+                        <option value="360000000000">江西省</option>
+                        <option value="370000000000">山东省</option>
+                        <option value="410000000000">河南省</option>
+                        <option value="420000000000">湖北省</option>
+                        <option value="430000000000">湖南省</option>
+                        <option value="440000000000">广东省</option>
+                        <option value="450000000000">广西壮族自治区</option>
+                        <option value="460000000000">海南省</option>
+                        <option value="500000000000">重庆市</option>
+                        <option value="510000000000">四川省</option>
+                        <option value="520000000000">贵州省</option>
+                        <option value="530000000000">云南省</option>
+                        <option value="540000000000">西藏自治区</option>
+                        <option value="610000000000">陕西省</option>
+                        <option value="620000000000">甘肃省</option>
+                        <option value="630000000000">青海省</option>
+                        <option value="640000000000">宁夏回族自治区</option>
+                        <option value="650000000000">新疆维吾尔自治区</option>
+                    </select>
+				</div>
+                <div class="sui-select">
+                    <label>请选择您所在的城市</label>
+                    <select id="c_city1">
+                        <option value="110000000000">北京市</option>
+                        <option value="120000000000">天津市</option>
+                        <option value="130000000000">河北省</option>
+                        <option value="140000000000">山西省</option>
+                        <option value="150000000000">内蒙古自治区</option>
+                        <option value="210000000000">辽宁省</option>
+                        <option value="220000000000">吉林省</option>
+                        <option value="230000000000">黑龙江省</option>
+                        <option value="310000000000">上海市</option>
+                        <option value="320000000000">江苏省</option>
+                        <option value="330000000000">浙江省</option>
+                        <option value="340000000000">安徽省</option>
+                        <option value="350000000000">福建省</option>
+                        <option value="360000000000">江西省</option>
+                        <option value="370000000000">山东省</option>
+                        <option value="410000000000">河南省</option>
+                        <option value="420000000000">湖北省</option>
+                        <option value="430000000000">湖南省</option>
+                        <option value="440000000000">广东省</option>
+                        <option value="450000000000">广西壮族自治区</option>
+                        <option value="460000000000">海南省</option>
+                        <option value="500000000000">重庆市</option>
+                        <option value="510000000000">四川省</option>
+                        <option value="520000000000">贵州省</option>
+                        <option value="530000000000">云南省</option>
+                        <option value="540000000000">西藏自治区</option>
+                        <option value="610000000000">陕西省</option>
+                        <option value="620000000000">甘肃省</option>
+                        <option value="630000000000">青海省</option>
+                        <option value="640000000000">宁夏回族自治区</option>
+                        <option value="650000000000">新疆维吾尔自治区</option>
+                    </select>
+				</div>
+                <div class="sui-select">
+                    <label>请选择您所在的城市</label>
+                    <select id="c_city2">
+                        <option value="110000000000">北京市</option>
+                        <option value="120000000000">天津市</option>
+                        <option value="130000000000">河北省</option>
+                        <option value="140000000000">山西省</option>
+                        <option value="150000000000">内蒙古自治区</option>
+                        <option value="210000000000">辽宁省</option>
+                        <option value="220000000000">吉林省</option>
+                        <option value="230000000000">黑龙江省</option>
+                        <option value="310000000000">上海市</option>
+                        <option value="320000000000">江苏省</option>
+                        <option value="330000000000">浙江省</option>
+                        <option value="340000000000">安徽省</option>
+                        <option value="350000000000">福建省</option>
+                        <option value="360000000000">江西省</option>
+                        <option value="370000000000">山东省</option>
+                        <option value="410000000000">河南省</option>
+                        <option value="420000000000">湖北省</option>
+                        <option value="430000000000">湖南省</option>
+                        <option value="440000000000">广东省</option>
+                        <option value="450000000000">广西壮族自治区</option>
+                        <option value="460000000000">海南省</option>
+                        <option value="500000000000">重庆市</option>
+                        <option value="510000000000">四川省</option>
+                        <option value="520000000000">贵州省</option>
+                        <option value="530000000000">云南省</option>
+                        <option value="540000000000">西藏自治区</option>
+                        <option value="610000000000">陕西省</option>
+                        <option value="620000000000">甘肃省</option>
+                        <option value="630000000000">青海省</option>
+                        <option value="640000000000">宁夏回族自治区</option>
+                        <option value="650000000000">新疆维吾尔自治区</option>
+                    </select>
+				</div>
+
+
+		</div>
+
+	
+	
+	<script src="../js/zepto.min.js"></script> 
+    <script src="../js/sui.js"></script>
+   
+	</body>
+</html>

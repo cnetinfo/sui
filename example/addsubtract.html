@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>sui</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/> 
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="format-detection" content="telephone=no" />
+        <meta http-equiv="Expires" content="0">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Cache-Control" content="no-cache">
+		<link rel="stylesheet" href="../css/global.css">
+		<link rel="stylesheet" href="../css/sui.css">
+	</head>
+	<body>
+		<header>
+			<div class="container fixed">
+				<div class="wrap">
+					<div class="back"> 
+						<a href="javascript:history.go(-1);" title="返回"><i class="icons icons-pointleft"></i></a>
+					</div>
+		            <h1>加减输入框</h1>
+				</div>	
+			</div>			
+		</header>
+
+		<div class="container">
+				
+                
+                <p class="pline"> 加减输入框</p>      
+                <p class="pline">
+                	<span class="Addsubtract"><button class="subtractBtn">-</button><input type="tel" value="11"  /><button class="addBtn">+</button></span>
+                </p>
+
+		</div>
+
+	
+	
+	<script src="../js/zepto.min.js"></script> 
+    <script src="../js/sui.js"></script>
+    <style>
+    	.Addsubtract button,.Addsubtract input{ width:25px; height:25px; }
+		.Addsubtract input{ width:50px; text-align:center;}
+    </style>
+    <script>
+		$.fn.suiAddsubtract({
+			maxs:20,
+			mins:1,
+			mf:'.Addsubtract',
+			add:'.addBtn',
+			subtract:'.subtractBtn',
+		}); 
+    </script> 
+	</body>
+</html>
